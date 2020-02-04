@@ -26,10 +26,13 @@ p{
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
-    width: 800px;
-    height: 500px;
-    border: 1px solid #f1f1f1;
+    width: 1500px;
+    height: 300px;
+    background-color: hotpink;
+    color: white;
     perspective: 1000px;
+    border-radius: 30%;
+    opacity: 80%;
   }
   .flip-box-inner {
     position: relative;
@@ -52,7 +55,8 @@ p{
   }
  
 .flip-box-back {
-    background-color: dodgerblue;
+    background-color: hotpink;
     color: white;
     transform: rotateX(180deg);
+    border-radius: 30%;
   }
