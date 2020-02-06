@@ -9,11 +9,19 @@
 }
 body{
     font-family: 'Yatra One', cursive;
-    background-image: url(https://bit.ly/2OpVAT8);
+    background-image: url(https://bit.ly/372bfyx);
     background-attachment: fixed;
     background-size: cover;
     
 
+}
+h1{
+  font-size:50px;
+  color:yellow;
+  border: #55ACEE;
+}
+h2{
+  color: navy;
 }
 h1,h2{
     text-align: center;
@@ -32,8 +40,10 @@ h1,h2{
     color: yellow;
 }
 p{
+    font: 1em sans-serif;
     text-align: center;
     font-size: large;
+    color: navy;
 }
 
 
@@ -184,45 +194,29 @@ p{
 
 /*divs*/
 
-.flip-box {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: transparent;
-    width: 1500px;
-    height: 300px;
-    background-color:rgba(231,154,255,0.75);
-    color: white;
-    perspective: 1000px;
-    border-radius: 30%;
-    opacity: 80%;
-  }
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-box:hover .flip-box-inner {
-    transform: rotateX(180deg);
-  }
-  
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
- 
-.flip-box-back {
-    background-color:rgba(231,154,255,0.75);
-    color: white;
-    transform: rotateX(180deg);
-    border-radius: 30%;
-  }
+h1,img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+/**/
+
+
 /*skills*/
 
   /*social icons*/
